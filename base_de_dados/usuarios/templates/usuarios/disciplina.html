@@ -1,0 +1,55 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>CADASTRO DE DISCIPLINA</title>
+        <link rel="shortcut icon" href="../../static/img/logotipo.png" type="image/x-png"/><!--Icone do browser-->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" media="screen" href="{% static 'css/base.css' %}"> <!--Puxa config do CSS-->
+        <link rel="stylesheet" href="{% static 'css/slick.css' %}">
+        <script src="{% static 'js/anima.js' %}"></script> <!--Puxa config do JS-->
+
+    </head>
+    <body>
+        <header class="menu-principal">
+            <main><!--Tag principal que engloba tudo-->
+                <div class="header-1">
+                    <div class="logo">
+                        <img src="../../static/img/titulo.png"/>
+                    </div>
+                </div>
+            </main>
+        </header>
+    
+    <main class="col-100 menu-urls">
+        <div class="header-2">
+            <div class="menu">
+                <ul>
+                    <li><a href="index">Página Inicial</a></li>
+                    <li><a href="cursos">Cursos</a></li>
+                    <li><a href="descontos">Descontos</a></li>
+                    <li><a href="noticias">Noticias</a></li>
+                    <li><a href="sobre">Sobre</a></li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <center><h1>Preencha os campos a seguir</h1></center>
+    <h5>*campos obrigatórios</h5>
+    <form class="form" class=".placeholder" action="../final_cadastro.html" method="POST"></form>
+    <!-- <form action="final_cadastro.html" method="POST"> -->
+        <label>Sigla:*</label><br/>
+        <input type="text" maxlength="5" size="10" placeholder="Digite a sigla" required/><br/><br/>
+        <label>Descrição da disciplina:*</label><br/>
+        <input type="text" maxlength="50" size="50" placeholder="Digite a da disciplina" required/><br/><br/>
+        <label>Carga horária:*</label><br/>
+        <input type="text" maxlength="5" size="10" required/><br/><br/>
+        <input class="submit" type="submit" value="Cadastrar"/>
+    </form>   
+
+</body>
+</html>

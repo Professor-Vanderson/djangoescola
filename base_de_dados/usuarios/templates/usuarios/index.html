@@ -1,0 +1,80 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>PÁGINA INICIAL</title>
+    <link rel="shortcut icon" href="../../static/img/logotipo.png" type="image/x-png"/><!--Icone do browser-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="{% static 'css/base.css' %}"> <!--Puxa config do CSS-->
+    <link rel="stylesheet" href="{% static 'css/slick.css' %}">
+    <script src="{% static 'js/anima.js' %}"></script> <!--Puxa config do JS-->
+</head>
+<body>
+    <header class="menu-principal">
+        <main><!--Tag principal que engloba tudo-->
+            <div class="header-1">
+                <div class="logo">
+                    <img src="../../static/img/titulo.png"/>
+                </div>
+            </div>
+        </main>
+    </header>
+
+    <main class="col-100 menu-urls">
+        <div class="header-2">
+            <div class="menu">
+                <ul>
+                    <li><a href="index">Página Inicial</a></li>
+                    <li><a href="cursos">Cursos</a></li>
+                    <li><a href="descontos">Descontos</a></li>
+                    <li><a href="noticias">Noticias</a></li>
+                    <li><a href="cadastro">Cadastro</a></li>
+                    <li><a href="sobre">Sobre</a></li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <div class="col-100">
+        <div class="slider-principal">
+                <img src="../../static/img/banner4.png"/>
+                <img src="../../static/img/banner2.png"/>
+                <img src="../../static/img/banner3.png"/>
+        </div>
+    </div>
+
+    <div class="col-100 bloco-texto">
+        <div class="content texto-destaque">
+            <h1><strong> VENHA CONHECER O FANTÁSTICO MUNDO DA TÉCNOLOGIA! </strong></h1>
+            <p>A Dev System é pioneira no país bem como possui um método próprio que não existe em lugar algum do mundo. 
+                Nossa escola é referência no mercado.</p>
+
+            <div class="col-3">
+                <img src="../../static/img/aula.png"/>
+                <h3>AULA GRÁTIS</h3>
+                <p>Venha conhecer nossa Fantástica Metodologia de Ensino, agende uma Aula Demonstrativa Grátis.</p>
+            </div>
+            <div class="col-3">
+                <img src="../../static/img/livro.png"/>
+                <h3>CONTEÚDO COMPLETO</h3>
+                <p>Nossos alunos aprendem e desenvolvem diversos tipos de conteúdos e habilidades.</p>
+            </div>
+            <div class="col-3">
+                <img src="../../static/img/profissional.png"/>
+                <h3>FOCO PROFISSIONAL</h3>
+                <p>A capacidade de navegar na vida complexa e nos ambientes de trabalho exige que os alunos 
+                    prestem atenção rigorosa ao desenvolvimento de habilidades adequadas.</p>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="../../static/js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="../../static/js/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="../../static/js/slick.min.js"></script>
+    <script type="text/javascript" src="../../static/js/anima.js"></script>
+    
+</body>
+</html>

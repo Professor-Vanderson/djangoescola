@@ -1,0 +1,77 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>LÓGICA DE PROGRAMAÇÃO</title>
+    <link rel="shortcut icon" href="../../static/img/logotipo.png" type="image/x-png"/><!--Icone do browser-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="{% static 'css/base.css' %}"> <!--Puxa config do CSS-->
+    <link rel="stylesheet" href="{% static 'css/slick.css' %}">
+    <script src="{% static 'js/anima.js' %}"></script> <!--Puxa config do JS-->
+
+</head>
+<body>
+    <header class="menu-principal">
+        <main><!--Tag principal que engloba tudo-->
+            <div class="header-1">
+                <div class="logo">
+                    <img src="../../static/img/titulo.png"/>
+                </div>
+            </div>
+        </main>
+    </header>
+
+    <main class="col-100 menu-urls">
+        <div class="header-2">
+            <div class="menu">
+                <ul>
+                    <li><a href="index">Página Inicial</a></li>
+                    <li><a href="cursos">Cursos</a></li>
+                    <li><a href="descontos">Descontos</a></li>
+                    <li><a href="noticias">Noticias</a></li>
+                    <li><a href="cadastro">Cadastro</a></li>
+                    <li><a href="sobre">Sobre</a></li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <div class="medida">
+            <img src="../../static/img/bannerlogica.png"/>
+    </div>
+
+
+    <main class="horas">
+            <div class="info-curso">
+                <h2>CARGA HORÁRIA</h2><hr/> <!--linha na div-->
+                <h2>40 Hrs</h2><hr/>
+                <h2>Curso Presencial</h2><hr/>
+                <h2>Apostila Impressa</h2>
+            </div>
+        </main>
+    
+        <main class="curso">
+            <div class="infor-geral">
+                <h1>O CURSO</h1>
+                <p>O curso Introdução à Lógica de Programação objetiva ajudar o aluno a 
+                    compreender a lógica de programação antes mesmo de trabalhar com quaisquer 
+                    linguagens. Composto por conceitos, definições e exercícios práticos, o 
+                    curso visa fazer com que o aluno desenvolva seu raciocínio lógico, enquanto
+                    conhece princípios básicos de desenvolvimento como algoritmos, sistemas de 
+                    numeração, variáveis, entre outros. </p>
+
+                <h1>PRÉ REQUISITOS</h1>
+                <p>-Conhecimento básico de informática.<br/></p>
+
+                <h1>INDICADO PARA</h1>
+                <p>- Melhorar seu curriculo;<br/>
+                    - Formação técnica;<br/>
+                    - Portabilidade e segurança.<br/>
+                </p>
+            </div>
+        </main>
+</body>
+</html>

@@ -1,0 +1,104 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>PÁGINA INICIAL</title>
+    <link rel="shortcut icon" href="../../static/img/logotipo.png" type="image/x-png"/><!--Icone do browser-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="{% static 'css/base.css' %}"> <!--Puxa config do CSS-->
+    <link rel="stylesheet" href="{% static 'css/slick.css' %}">
+    <script src="{% static 'js/anima.js' %}"></script> <!--Puxa config do JS-->
+
+</head>
+<body>
+    <header class="menu-principal">
+        <main><!--Tag principal que engloba tudo-->
+            <div class="header-1">
+                <div class="logo">
+                    <img src="../../static/img/titulo.png"/>
+                </div>
+            </div>
+        </main>
+    </header>
+
+    <main class="col-100 menu-urls">
+        <div class="header-2">
+            <div class="menu">
+                <ul>
+                    <li><a href="index">Página Inicial</a></li>
+                    <li><a href="descontos">Descontos</a></li>
+                    <li><a href="noticias">Noticias</a></li>
+                    <li><a href="cadastro">Cadastro</a></li>
+                    <li><a href="sobre">Sobre</a></li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <div>
+        <div class="content_img">
+            <img src='../../static/img/manutencao.png' class="taman"/>
+            <a href="manutencao"><div>Com este curso você conhecerá os componentes essenciais para o funcionamento
+                 de um computador.
+            </div></a>
+        </div>
+        <div  class="content_img">
+            <img src='../../static/img/python.png' class="taman"/>
+            <a href="python"><div>O curso python ensina a usar o python para automatizar infraestrutura em nuvem.
+            </div></a>
+        </div>
+        <div  class="content_img">
+                <img src='../../static/img/webdesign.png' class="taman"/>
+                <a href="webdesign"><div>Uma visão e abordagem completa das mais variadas ferramentas para
+                     profissionais de tecnologia sobre web design.
+                </div></a>
+        </div>
+        <div  class="content_img">
+                <img src='../../static/img/designgrafico.png' class="taman"/>
+                <a href="designgrafico"><div>Para que você possa pensar e respirar design, o curso de Design
+                     Gráfico da Belas Artes conta com disciplinas para desenvolver as habilidades
+                </div></a>
+        </div>
+        <div  class="content_img">
+                <img src='../../static/img/arduino.png' class="taman"/>
+                <a href="arduino"><div>O Curso de Arduino Aplicado à Robótica é focado em te ensinar como montar um robô
+                     seguidor de linha.
+                </div></a>
+        </div>
+        <div  class="content_img">
+                </a><img src='../../static/img/java.png' class="taman"/></a>
+                <a href="java"><div>Java é uma grande plataforma presente em todo lugar! De corporações a bancos
+                     e governo.
+                </div></a>
+        </div>
+        <div  class="content_img">
+                <img src='../../static/img/ruby.png' class="taman"/>
+                <a href="ruby"><div>Desenvolva para a web com o framework que revolucionou o mercado pela sua
+                    agilidade, além da linguagem Ruby que oferece recursos incríveis.
+                </div></a>
+        </div>
+        <div  class="content_img">
+                <img src='../../static/img/cobol.png' class="taman"/>
+                <a href="cobol"><div>Mantém e evoluem seus sistemas corporativos na plataforma mainframe.
+                </div></a>
+        </div>
+        <div  class="content_img">
+                <img src='../../static/img/sql.png' class="taman"/>
+                <a href="sql"><div>Torna-se um DBA SQL Server, aprenda a arquitetura do SGBD e a estrutura da base de dados.
+                </div></a>
+        </div>
+        <div  class="content_img">
+                <img src='../../static/img/logica.png' class="taman"/>
+                <a href="logica"><div>O curso Introdução à Lógica de Programação objetiva ajudar o aluno a compreender a lógica
+                    de programação antes mesmo de trabalhar com quaisquer linguagens.
+                </div></a>
+        </div>
+    </div>
+
+                    
+
+</body>
+</html>

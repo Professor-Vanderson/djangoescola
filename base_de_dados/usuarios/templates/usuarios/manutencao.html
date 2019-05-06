@@ -1,0 +1,77 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>MANUTENÇÃO</title>
+    <link rel="shortcut icon" href="../../static/img/logotipo.png" type="image/x-png"/><!--Icone do browser-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="{% static 'css/base.css' %}"> <!--Puxa config do CSS-->
+    <link rel="stylesheet" href="{% static 'css/slick.css' %}">
+    <script src="{% static 'js/anima.js' %}"></script> <!--Puxa config do JS-->
+
+</head>
+<body>
+    <header class="menu-principal">
+        <main><!--Tag principal que engloba tudo-->
+            <div class="header-1">
+                <div class="logo">
+                    <img src="../../static/img/titulo.png"/>
+                </div>
+            </div>
+        </main>
+    </header>
+
+    <main class="col-100 menu-urls">
+        <div class="header-2">
+            <div class="menu">
+                <ul>
+                    <li><a href="index">Página Inicial</a></li>
+                    <li><a href="cursos">Cursos</a></li>
+                    <li><a href="descontos">Descontos</a></li>
+                    <li><a href="noticias">Noticias</a></li>
+                    <li><a href="cadastro">Cadastro</a></li>
+                    <li><a href="sobre">Sobre</a></li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <div class="medida">
+        <img src="../../static/img/bannermanutencao.png"/>
+    </div>
+
+    <main class="horas">
+        <div class="info-curso">
+            <h2>CARGA HORÁRIA</h2><hr/> <!--linha na div-->
+            <h2>80 Hrs</h2><hr/>
+            <h2>Curso Presencial e EAD</h2><hr/>
+            <h2>Apostila Impressa</h2>
+        </div>
+    </main>
+
+    <main class="curso">
+        <div class="infor-geral">
+            <h1>O CURSO</h1>
+            <p>Tem como objetivo profissionalizar o aluno para identificar, consertar 
+                e solucionar problemas encontrados no funcionamento de computadores. 
+                Além de criar oportunidades de trabalho nas empresas especializadas, 
+                após o curso o aluno poderá optar por prestar serviços de manutenção 
+                em computadores, paralelamente à sua atividade profissional, ou até 
+                mesmo abrir a sua própria empresa.</p>
+            <h1>CONTEÚDO</h1>
+            <p>Instalação de sistema operacional, Instalação de drivers e softwares, 
+                Formatação de computador, Reconhecimento de hardware, Instalação de 
+                placas e periféricos, Rede ponto a ponto, Diagnóstico e reparo de defeitos.</p>
+            <h1>INDICADO PARA</h1>
+            <p>- Facilitar a inserção no mercado de trabalho ou proporcionar uma fonte de renda extra com prestação de serviços;<br/>
+                    - Aprimorar os conhecimentos na área técnica de informática;<br/>
+                    - Formação profissional completa, gerando um grande diferencial no currículo;<br/>
+                    - Adquirir conhecimentos de hardware e software;<br/>
+                    - Atuar na área de TI em empresas ou montar seu próprio negócio.</p>
+        </div>
+    </main>
+    
+    

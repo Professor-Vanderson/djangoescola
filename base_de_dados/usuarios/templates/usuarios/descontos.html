@@ -1,0 +1,69 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>PÁGINA INICIAL</title>
+    <link rel="shortcut icon" href="../../static/img/logotipo.png" type="image/x-png"/><!--Icone do browser-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="{% static 'css/base.css' %}"> <!--Puxa config do CSS-->
+    <link rel="stylesheet" href="{% static 'css/slick.css' %}">
+    <script src="{% static 'js/anima.js' %}"></script> <!--Puxa config do JS-->
+
+</head>
+<body>
+    <header class="menu-principal">
+        <main><!--Tag principal que engloba tudo-->
+            <div class="header-1">
+                <div class="logo">
+                    <img src="../../static/img/titulo.png"/>
+                </div>
+            </div>
+        </main>
+    </header>
+
+    <main class="col-100 menu-urls">
+        <div class="header-2">
+            <div class="menu">
+                <ul>
+                    <li><a href="index">Página Inicial</a></li>
+                    <li><a href="cursos">Cursos</a></li>
+                    <li><a href="noticias">Noticias</a></li>
+                    <li><a href="csdastro">Cadastro</a></li>
+                    <li><a href="sobre">Sobre</a></li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+
+
+    <div class="col-100 informa">
+            <div class="col-5">
+                        <img src="../../static/img/func1.png"/>
+                        <h3>FUNCIONÁRIOS BURGUER KING</h3>
+                        <p>
+                            Todo funcionário da rede Burguer King, tem direito a 20% de desconto em qualquer
+                            curso de nossa rede.
+                        </p>
+                    </div>
+                    <div class="col-5">
+                        <img src="../../static/img/func2.png"/>
+                        <h3>ASSOCIADOS EMBRAER</h3>
+                        <p>
+                            Todo funcionário ou associado EMBRAER, tem direito a 30% de desconto em qualquer
+                            curso de nossa rede.
+                        </p>
+                    </div>
+                    <div class="col-5">
+                        <img src="../../static/img/func3.png"/>
+                        <h3>ASSOCIADOS BRADESCO</h3>
+                        <p>
+                            Todo funcionário ou associado EMBRAER, tem direito a 25% de desconto em qualquer
+                            curso de nossa rede.
+                        </p>
+                    </div>
+            </div>
+        </div>

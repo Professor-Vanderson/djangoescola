@@ -1,0 +1,122 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>CADASTRO DE USUÁRIO</title>
+        <link rel="shortcut icon" href="../../static/img/logotipo.png" type="image/x-png"/><!--Icone do browser-->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" media="screen" href="{% static 'css/base.css' %}"> <!--Puxa config do CSS-->
+        <link rel="stylesheet" href="{% static 'css/slick.css' %}">
+        <script src="{% static 'js/anima.js' %}"></script> <!--Puxa config do JS-->
+
+    </head>
+    <body>
+        <header class="menu-principal">
+            <main><!--Tag principal que engloba tudo-->
+                <div class="header-1">
+                    <div class="logo">
+                        <img src="../../static/img/titulo.png"/>
+                    </div>
+                </div>
+            </main>
+        </header>
+    
+    <main class="col-100 menu-urls">
+        <div class="header-2">
+            <div class="menu">
+                <ul>
+                    <li><a href="index">Página Inicial</a></li>
+                    <li><a href="cursos">Cursos</a></li>
+                    <li><a href="descontos">Descontos</a></li>
+                    <li><a href="noticias">Noticias</a></li>
+                    <li><a href="sobre">Sobre</a></li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <center><h1>Preencha os campos a seguir</h1></center>
+    <h5> *campos obrigatórios</h5>
+    <form class="form" class=".placeholder" action="final_cadastro.html" method="POST"></form>
+        <label>Nome:*</label><br/>
+        <input type="text" maxlength="100" size="40" placeholder="Digite seu nome" required/><br/><br/>
+        <label>E-mail:*</label><br/>
+        <input type="email" maxlength="100" size="40" placeholder="Digite seu e-mail" required/><br/><br/>
+        <label>Telefone de contato:*</label><br/>
+        <input type="text" maxlength="15" size="20" placeholder="(xx) xxxxx-xxxx" required/><br/><br/>
+        <label>CPF/CNPJ:*</label><br/>
+        <input type="text" maxlength="14" size="20" placeholder="Digite seu CPF/CNPJ" required/><br/><br/>
+        <label>Tipo de acesso:*</label><br/>
+        <select name="Tipo de acesso">
+            <option>Selecione:</option><br/>
+            <option value="Aluno">Aluno</option><br/>
+            <option value="Professor">Professor</option><br/>
+            <option value="Coordenador">Coordenador</option><br/>
+            <option value="Gestão">Gestão Administrativa</option><br/>
+            <option value="Admin">Admin</option><br/>
+        </select><br/><br/>
+        <label>Login:*</label><br/>
+        <input type="text" maxlength="20" size="20" placeholder="Digite o login" required/></tab>
+        <label>Senha:*</label>
+        <input type="password" maxlength="15" size="15" placeholder="Digite a senha" required/><br/><br/><br/>
+        <label>CEP:*</label><br/>
+        <input type="text" maxlength="9" size="20" placeholder="Digite seu CEP" required/><br/><br/>
+        <label>Logradouro:*</label><br/>
+        <select name="Logradouro">
+            <option>Selecione:</option><br/>
+            <option value="Rua">Rua</option><br/>
+            <option value="Avenida">Avenida</option><br/>
+            <option value="Travessa">Travessa</option><br/>
+            <option value="Beco">Beco</option><br/>
+            <option value="Estrada">Estrada</option><br/>
+            <option value="Rodovia">Rodovia</option><br/>
+            <option value="Praça">Praça</option><br/>
+        </select><br/><br/>
+        <label>Endereço:*</label><br/>
+        <input type="text" maxlength="100" size="50" placeholder="Digite o endereço" required/></tab>
+        <label>Número:*</label>
+        <input type="text" maxlength="5" size="10" placeholder="Digite o número" required/><br/><br/>
+        <label>Complemento:</label></br>
+        <input type="text" maxlength="50" size="50" placeholder="Digite o complemento (opcional)"/><br/><br/>
+        <label>Bairro:*</label></br>
+        <input type="text" maxlength="50" size="50" placeholder="Digite seu bairro" required/><br/><br/>
+        <label>Cidade:*</label></br>
+        <input type="text" maxlength="50" size="30" placeholder="Digite sua cidade" required/>
+        <label>UF:*</label>
+        <select name="UF">
+            <option>Selecione:</option><br/>
+            <option value="AC">AC</option><br/>
+            <option value="AL">AL</option><br/>
+            <option value="AP">AP</option><br/>
+            <option value="AM">AM</option><br/>
+            <option value="BA">BA</option><br/>
+            <option value="CE">CE</option><br/>
+            <option value="DF">DF</option><br/>
+            <option value="ES">ES</option><br/>
+            <option value="GO">GO</option><br/>
+            <option value="MA">MA</option><br/>
+            <option value="MG">MG</option><br/>
+            <option value="MT">MT</option><br/>
+            <option value="MS">MS</option><br/>       
+            <option value="PA">PA</option><br/>
+            <option value="PB">PB</option><br/>
+            <option value="PE">PE</option><br/>
+            <option value="PI">PI</option><br/>
+            <option value="PR">PR</option><br/>
+            <option value="RJ">RJ</option><br/>
+            <option value="RN">RN</option><br/>
+            <option value="RS">RS</option><br/>
+            <option value="RO">RO</option><br/>
+            <option value="RR">RR</option><br/>
+            <option value="SC">SC</option><br/>
+            <option value="SP">SP</option><br/>
+            <option value="SE">SE</option><br/>
+        </select><br/><br/><br/>
+        <input class="submit" type="submit" value="Cadastrar"/>
+    </form>   
+
+</body>
+</html>
